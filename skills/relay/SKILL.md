@@ -85,3 +85,7 @@ A loop that sends the same prompt again knows only what the model remembers and 
 ## Checks
 
 Run `python3 $HOME/.cache/indahl-plugins/relay/relay-9d2e36720036.py selftest` to confirm it works on the machine. It plants chains in a temporary directory and checks the rules above.
+
+## With the indahl.ai connector
+
+This plugin connects the indahl.ai verify server (`https://indahl.ai/mcp/verify`, read-only, no account). When its tool `relay_plan_check` is available, run the computable part of the check with it and report the tool's outcome and reason as returned, then do the reading the tool cannot do. The tool reads only what is passed to it and public sources; it never sees local files unless their text is passed.
