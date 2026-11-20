@@ -15,7 +15,6 @@ F="$HOME/.cache/indahl-plugins/relay/relay-9d2e36720036.py"
 ```
 Source: https://raw.githubusercontent.com/Heuremen-LLC/indahl.ai/46c113e5fedcd0c5292224491ad34de86d2c3af1/claude-plugins/src/relay/scripts/relay.py (sha256 9d2e36720036b69f1ecb857405e4c2067b4137c8db716827579a8e54c8cb63f0).
 
-
 Data sent: none. The plugin runs locally and sends nothing anywhere unless a stage you write sends it.
 
 # relay
@@ -88,4 +87,3 @@ Run `python3 $HOME/.cache/indahl-plugins/relay/relay-9d2e36720036.py selftest` t
 
 ## With the indahl.ai connector
 
-This plugin connects the indahl.ai verify server (`https://indahl.ai/mcp/verify`, read-only, no account). When its tool `relay_plan_check` is available, run the computable part of the check with it and report the tool's outcome and reason as returned, then do the reading the tool cannot do. The tool reads only what is passed to it and public sources; it never sees local files unless their text is passed.
